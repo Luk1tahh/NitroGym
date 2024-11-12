@@ -1,0 +1,127 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: #f8f3f6;
+    margin: 0%;
+}
+header{
+    background-color: #ff9944;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+header img{
+    margin: 0;
+    margin-left: 100px;
+    height: 250px;
+    padding-bottom: 10px;
+}
+h2{
+    font-size: 40px;
+}
+.A2{
+    border: 10px;
+    border-radius: 20px;
+    border-color: #f8f3f6;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+
+    background-color: #f8f3f6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+}
+ul{
+    list-style: none;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    font-size: 40px;
+}
+header nav ul li{
+    padding: 5px;
+    display: inline;
+    margin-left: 80px;
+    padding-left: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+}
+header nav ul:first-child{
+    margin-left: 0;
+}
+header nav ul:last-child{
+    margin-right: 60px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #231f20;
+}
+.atp{
+    background-color: #f8f3f6;
+    text-align: center;
+    margin: auto;
+    padding: 0%;
+    
+    color: #231f20;
+    font-size: 35px;
+}
+.sucursales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ;
+    padding: 0%;
+    margin: 0%;
+}
+section div a div img{
+    margin: auto;
+    display: flex;
+    padding: 0%;
+    height: 30%;
+
+    transform: scale(0.7);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.500);
+}
+section div a div img:hover{
+    transform: scale(0.8);
+}
+.pdpp{
+    padding-top: 50px;
+    margin-left: 22%;
+}
+.pdp{
+    list-style: none;
+    padding: 15px;
+    margin: 20px;
+    display: inline-flex;
+
+    text-decoration: none;
+    background-color: #1d191a;
+    border-radius: 25px;
+}
+footer{
+    margin-top: 100px;
+    background-color: #1d191a;
+    border-collapse: collapse;
+}
+footer table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding: 0%;
+}
+.fatp{
+    margin-right: 50%;
+    
+    font-size: 80px;
+    color: #ff9944;
+}
+footer tr td img{
+    margin-left: 120%;
+    margin-top: 70px;
+    margin-bottom: 50px; 
+}

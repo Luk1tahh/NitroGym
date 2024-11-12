@@ -1,0 +1,135 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: #f8f3f6;
+    margin: 0%;
+}
+header{
+    background-color: #231f20;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+header img{
+    margin: 0;
+    margin-left: 100px;
+    height: 250px;
+    padding-bottom: 10px;
+}
+h2{
+    font-size: 40px;
+}
+.A2{
+    border: 10px;
+    border-radius: 20px;
+    border-color: #f8f3f6;
+    border-style: solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+
+    background-color: #f8f3f6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+}
+ul{
+    list-style: none;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    font-size: 40px;
+}
+header nav ul li{
+    padding: 5px;
+    display: inline;
+    margin-left: 80px;
+    padding-left: 15px;
+    border-radius: 20px;
+
+    background-color: #ff9944;
+    box-shadow: 5px 5px 10px rgba(180, 96, 0, 0.568);
+}
+header nav ul:first-child{
+    margin-left: 0;
+}
+header nav ul:last-child{
+    margin-right: 60px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #231f20;
+}
+.atp{
+    background-color: #f8f3f6;
+    text-align: center;
+    margin: auto;
+    padding: 0%;
+    
+    color: #231f20;
+    font-size: 35px;
+}
+section{
+    margin: 5%;
+    padding: 0%;
+    justify-content: center;
+
+    height: 50vh;
+    background-color: #f4f4f4;
+}
+.container{
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: #ff9944;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    padding: 8px;
+    margin-bottom: 16px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+    background-color: #292425;
+    color: #f8f3f6;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #231f20;
+}
+footer{
+    margin-top: 100px;
+    background-color: #1d191a;
+    border-collapse: collapse;
+}
+footer table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding: 0%;
+}
+.fatp{
+    margin-right: 50%;
+    
+    font-size: 80px;
+    color: #ff9944;
+}
+footer tr td img{
+    margin-left: 120%;
+    margin-top: 70px;
+    margin-bottom: 50px; 
+}

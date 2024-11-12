@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activa Tu Potencial</title>
+    <link rel="stylesheet" href="Ventas.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="fotos/NitroGymLogo.png"> </a>
+        <nav>
+            <ul>
+                <h2>
+                <li><a href="Ejercicios.html"> Ejercitate con nosotros </a></li>
+                <li class="A2"> <a href="registro.html"> Iniciar Sesión </a> </li>
+                </h2>
+            </ul>
+        </nav>
+    </header>
+    <nav class="atp">
+        <ul>
+            <li> ACTIVA TU POTENCIAL </li>
+        </ul>
+    </nav>
+    <section class="product-container" id="product-container"> </section>
+    <script>
+        const products = [
+            { name: "Suplemento en polvo-whey protein", description: "proteínas sabor vanilla ice cream en pote de 930g", price: 15.50, image:"fotos/producto1.png" },
+
+            { name: "Suplemento en polvo-whey protein", description: "proteína sabor vainilla en pote de 3kg", price: 24.00, image: "fotos/producto2.png" },
+
+            { name: "Suplemento en polvo-ENA Sport Whey X-Pro", description: "proteína sabor double rich chocolate en pote de 907g", price: 2300, image: "fotos/producto3.png" },
+
+            { name: "Toniiq Quercetina D Ultra", description: "Alta Pureza 95%+ 1000mg Purificada", price: 76.00, image: "fotos/producto4.png" },
+            
+            { name: "Mancuerna Con Topes", description: "15 Kg De Discos Fabricantes. Color Negro", price: 16.50 , image: "fotos/producto5.png" },
+
+            { name: "Mancuerna Hexagonal Engomada", description: "10kg G Fitness Color Negro", price: 44.75, image: "fotos/producto6.png" },
+
+            { name: "Barra Larga Hueca Reforzada", description: "1.50 + 2 Discos 7.5 Kg Kit Gym", price: 41.50, image: "fotos/producto7.png" },
+
+            { name: "Mini Paralela Profesional", description: "X2 Larga Con Goma Antideslizante", price: 26.00, image: "fotos/producto8.png" }
+        ];
+        // Función para agregar productos al contenedor
+        function renderProducts() {
+            const productContainer = document.getElementById("product-container");
+
+            products.forEach(product => {
+                const productElement = document.createElement("div");
+                productElement.classList.add("product");
+
+                productElement.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <p>Precio: $${product.price.toFixed(2)}</p>
+                    <button onclick="addToCart('${product.name}', ${product.price})">Agregar al carrito</button>
+                `;
+                productContainer.appendChild(productElement);
+            });
+        }
+        // Función para simular agregar productos al carrito (puedes expandir esta función según tus necesidades)
+        function addToCart(productName, productPrice) {
+            alert(`Producto agregado al carrito:\n${productName}\nPrecio: $${productPrice.toFixed(2)}`);
+        }
+        // Llama a la función para renderizar los productos al cargar la página
+        window.onload = renderProducts;
+    </script>
+    <nav class="pdpp">
+        <ul>
+            <h2>
+                <li class="pdp"> <a href="sucursales.html"> Sucursales </a> </li>
+                <li class="pdp"> <a href="Ejercicios.html"> Ejercitate con nosotros </a> </li>
+            </h2>
+        </ul>
+    </nav>
+    <footer>
+        <table>
+        <tr>
+            <td class="fatp"> ACTIVA TU POTENCIAL </td>
+            <td> <img src="fotos/CodigoQR.png"> </td>
+        </tr>
+        </table>
+    </footer>
+</body>
+</html>
